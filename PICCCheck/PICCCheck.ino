@@ -41,12 +41,30 @@ void setup()
   pinMode(redPin, OUTPUT);
   pinMode(greenPin, OUTPUT);
   pinMode(bluePin, OUTPUT);
+  
+  
+  // Initialisierung, weils toll aussieht!
+  setColor(255, 0, 0); // rot
+  delay(500);
+  setColor(0, 255, 0); // rot
+  delay(300);
+  setColor(0, 0, 255); // rot
+  delay(600);
+  setColor(255, 255, 255); // rot
+  delay(400);
+  setColor(255, 255, 0); // rot
+  delay(600);
+  setColor(0, 255, 255); // rot
+  delay(500);
 }
  
 void loop()
 {
+  
+
+
       // RGB LED aus
-      setColor(0, 0, 0); // green
+      setColor(0, 0, 0); // aus
 
     // Für einen schöneren Übergang
     delay(100);
@@ -70,7 +88,8 @@ void loop()
   // PICC Typ herausbekommen
   byte piccType = mfrc522.PICC_GetType(mfrc522.uid.sak);
 
- /* Debug Ausgabe
+/* 
+  //Debug Ausgabe
   Serial.println();
   Serial.print("Die Kartennummer lautet: ");
   Serial.print(uID);
@@ -82,7 +101,10 @@ void loop()
 
 // Überprüfe auf unterstützten PICC Typ und noch mehr Debug Kram
   if ( piccType != MFRC522::PICC_TYPE_MIFARE_MINI && piccType != MFRC522::PICC_TYPE_MIFARE_1K&& piccType != MFRC522::PICC_TYPE_MIFARE_1K) {
-    Serial.println("Diese Tech-Demo benötigt MIFARE Classic Karten.");
+    //Serial.println("Diese Tech-Demo benötigt MIFARE Classic Karten.");
+    // RGB LED für 3,5sek auf BLAU
+    setColor(0,0,255); // blau
+    delay(3500);
     return;
   }
  
@@ -94,6 +116,7 @@ void loop()
     delay(3500);  
 }
 else {
+      // Serial.println("I can't let you do that Dave");
       // RGB LED für 3,5sek auf ROT
       setColor(255, 0, 0); // rot
       delay(3500);
