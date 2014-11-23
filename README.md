@@ -12,7 +12,7 @@ Shopping:
 
 + [Arduino UNO Rev3][1]
 + [RFID-RC522 RF IC Card Sensor Module][2]
-+ [RewritableWaterproof 13.56Mhz Water Droplets NFC Smart Tag][3]
++ [Rewritable Waterproof 13.56Mhz Water Droplets NFC Smart Tag][3]
 + 3x 220kΩ Widerstand
 + RGB LED (com. anode, rbg)
 
@@ -38,7 +38,7 @@ abrufbar. Ansonsten liegt eine Kopie der Lizenz in der entsprechenden Datei bei.
 
 [4]: <https://www.gnu.org/copyleft/gpl.html>
 
-Aublauf:
+Ablauf:
 ---------
 Ein Arduino UNO wird mit einem RFID Kartenleser verbunden. Es werden zwei Karten als authorisiert einprogrammiert. Abhängig davon ob eine Karte authorisiert ist oder nicht wir eine bestimmt Farbe über eine RGB Led ausgegeben
 
