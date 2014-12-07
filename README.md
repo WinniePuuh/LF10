@@ -4,7 +4,7 @@ LF10 - RFID, NFC, Arduino & Co.
 Software für Arduino und Raspbery Pi, um das Referat über Authentifizierungs-,
 Identifikations-, RFID Systeme zu unterstützen.
 
-Bereitgestellt von M. Meissner und P. Dennert, SYK12A
+Bereitgestellt von Marvin und Pierre, SYK12A
 
 
 Shopping:
