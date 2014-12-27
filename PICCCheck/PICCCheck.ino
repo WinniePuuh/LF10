@@ -110,13 +110,13 @@ void loop()
  
 // Den UID String vergleichen und eine entsprechende Aktion ausführen
   if( uID=="5b19d5ec" || uID=="4664d835")  {
-    // Serial.println("Access granted");
+     Serial.println("Access granted for uID " + uID);
     // RGB LED für 3,5sek auf GRÜN
     setColor(0, 255, 0); // grün
     delay(3500);  
 }
 else {
-      // Serial.println("I can't let you do that Dave");
+       Serial.println("I can't let you do that Dave (" + uID + ")");
       // RGB LED für 3,5sek auf ROT
       setColor(255, 0, 0); // rot
       delay(3500);
