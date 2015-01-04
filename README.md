@@ -23,7 +23,7 @@ Shopping:
 
 [3]: <http://eud.dx.com/product/rewritable-waterproof-13-56mhz-water-droplets-nfc-tag-transparent-copper-red-844234180#.VDvDHxaNAbc>
 
-[4]:http://eud.dx.com/product/solderless-breadboard-white-large-size-844121529
+[4]: <http://eud.dx.com/product/solderless-breadboard-white-large-size-844121529>
 
 Zielsetzung:
 ---------
@@ -36,10 +36,10 @@ beiträgt.
 Lizenz:
 ---------
 Der gesamte Code (sofern nicht anders gekennzeichnet) steht unter
-der GNU General Public License (GPL) v3. Eine Online Version ist [hier][4]
+der GNU General Public License (GPL) v3. Eine Online Version ist [hier][5]
 abrufbar. Ansonsten liegt eine Kopie der Lizenz in der entsprechenden Datei bei.
 
-[4]: <https://www.gnu.org/copyleft/gpl.html>
+[5]: <https://www.gnu.org/copyleft/gpl.html>
 
 Ablauf:
 ---------
@@ -47,4 +47,4 @@ Ein Arduino UNO wird mit einem RFID Kartenleser verbunden. Es werden zwei Karten
 
 Aufbau:
 ---------
-![Aufbau des Projekts](http://i.imgur.com/hCirT89.png)
+![Aufbau des Projekts](https://i.imgur.com/hCirT89.png)
