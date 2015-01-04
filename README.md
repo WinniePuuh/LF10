@@ -13,6 +13,7 @@ Shopping:
 + [Arduino UNO Rev3][1]
 + [RFID-RC522 RF IC Card Sensor Module][2]
 + [Rewritable Waterproof 13.56Mhz Water Droplets NFC Smart Tag][3]
++ [Solderless Breadboard - White (Large Size)][4]
 + 3x 220kΩ Widerstand
 + RGB LED (com. anode, rbg)
 
@@ -21,6 +22,8 @@ Shopping:
 [2]: <http://eud.dx.com/product/rfid-rc522-rf-ic-card-sensor-module-blue-silver-844203517#.VDvDGxaNAbc>
 
 [3]: <http://eud.dx.com/product/rewritable-waterproof-13-56mhz-water-droplets-nfc-tag-transparent-copper-red-844234180#.VDvDHxaNAbc>
+
+[4]:http://eud.dx.com/product/solderless-breadboard-white-large-size-844121529
 
 Zielsetzung:
 ---------
