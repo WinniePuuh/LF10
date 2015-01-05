@@ -54,4 +54,4 @@ Ein Arduino UNO wird mit einem RFID Kartenleser verbunden. Es werden zwei Karten
 
 Aufbau:
 ---------
-![Aufbau des Projekts](http://i.imgur.com/TzlYvN0.png)
+![Aufbau des Projekts](http://i.imgur.com/KHGSy42.png)
