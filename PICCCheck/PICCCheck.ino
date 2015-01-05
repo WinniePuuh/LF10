@@ -13,7 +13,7 @@
     along with this program.  If not, see <http://www.gnu.org/licenses/>.
     
     LF10 - Authentifikation, 2-Faktor, RFID, NFC - SKY12A
-    Marvin Meissner und Pierre Dennert
+    Marvin  und Pierre
     https://github.com/WinniePuuh/LF10
 */
 #include <SPI.h>
@@ -44,17 +44,17 @@ void setup()
   
   
   // Initialisierung, weils toll aussieht!
-  setColor(255, 0, 0); // rot
+  setColor(255, 0, 0); // Rot
   delay(500);
-  setColor(0, 255, 0); // rot
+  setColor(0, 255, 0); // Grün
   delay(300);
-  setColor(0, 0, 255); // rot
+  setColor(0, 0, 255); // Blau
   delay(600);
-  setColor(255, 255, 255); // rot
+  setColor(255, 255, 255); // Weiß
   delay(400);
-  setColor(255, 255, 0); // rot
+  setColor(255, 255, 0); // Gelb
   delay(600);
-  setColor(0, 255, 255); // rot
+  setColor(0, 255, 255); // Türkis
   delay(500);
 }
  
@@ -64,9 +64,9 @@ void loop()
 
 
       // RGB LED aus
-      setColor(0, 0, 0); // aus
+      setColor(0, 0, 0); // Schwarz
 
-    // FÃ¼r einen schÃ¶neren Ãœbergang
+    // Für einen schöneren Übergang
     delay(100);
     
     // Nach neuen Karten suchen.
@@ -76,13 +76,13 @@ void loop()
       return;
     }
 
-  // Eine der gefunden Karten auswÃ¤hlen
+  // Eine der gefunden Karten auswählen
   if ( ! mfrc522.PICC_ReadCardSerial())
   {
     return;
   }
 
-  // Eigene UID bilden. Dazu nehmen wir die 4(7)Byte Hex UID aus Block 0 und quetschen sie in einen schÃ¶nen String.
+  // Eigene UID bilden. Dazu nehmen wir die 4(7)Byte Hex UID aus Block 0 und quetschen sie in einen schönen String.
   String uID = String(mfrc522.uid.uidByte[0],HEX)+String(mfrc522.uid.uidByte[1],HEX)+String(mfrc522.uid.uidByte[2],HEX)+String(mfrc522.uid.uidByte[3],HEX);
   
   // PICC Typ herausbekommen
@@ -99,25 +99,25 @@ void loop()
   Serial.println();
 */
 
-// ÃœberprÃ¼fe auf unterstÃ¼tzten PICC Typ und noch mehr Debug Kram
+// Überprüfe auf unterstützten PICC Typ und noch mehr Debug Kram
   if ( piccType != MFRC522::PICC_TYPE_MIFARE_MINI && piccType != MFRC522::PICC_TYPE_MIFARE_1K&& piccType != MFRC522::PICC_TYPE_MIFARE_1K) {
-    //Serial.println("Diese Tech-Demo benÃ¶tigt MIFARE Classic Karten.");
-    // RGB LED fÃ¼r 3,5sek auf BLAU
+    //Serial.println("Diese Tech-Demo benötigt MIFARE Classic Karten.");
+    // RGB LED für 3,5sek auf BLAU
     setColor(0,0,255); // blau
     delay(3500);
     return;
   }
  
-// Den UID String vergleichen und eine entsprechende Aktion ausfÃ¼hren
+// Den UID String vergleichen und eine entsprechende Aktion ausführen
   if( uID=="5b19d5ec" || uID=="4664d835")  {
      Serial.println("Access granted for uID " + uID);
-    // RGB LED fÃ¼r 3,5sek auf GRÃœN
-    setColor(0, 255, 0); // grÃ¼n
+    // RGB LED für 3,5sek auf GRÜN
+    setColor(0, 255, 0); // grün
     delay(3500);  
 }
 else {
        Serial.println("I can't let you do that Dave (" + uID + ")");
-      // RGB LED fÃ¼r 3,5sek auf ROT
+      // RGB LED für 3,5sek auf ROT
       setColor(255, 0, 0); // rot
       delay(3500);
   }
