@@ -43,10 +43,10 @@ beiträgt.
 Lizenz:
 ---------
 Der gesamte Code (sofern nicht anders gekennzeichnet) steht unter
-der GNU General Public License (GPL) v3. Eine Online Version ist [hier][5]
+der GNU General Public License (GPL) v3. Eine Online Version ist [hier][8]
 abrufbar. Ansonsten liegt eine Kopie der Lizenz in der entsprechenden Datei bei.
 
-[5]: <https://www.gnu.org/copyleft/gpl.html>
+[8]: <https://www.gnu.org/copyleft/gpl.html>
 
 Ablauf:
 ---------
