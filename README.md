@@ -7,7 +7,7 @@ Identifikations-, RFID Systeme zu unterstützen.
 Bereitgestellt von Marvin und Pierre, SYK12A
 
 
-Shopping:
+Teileliste:
 ---------
 
 + [Arduino UNO Rev3][1]
@@ -54,4 +54,4 @@ Ein Arduino UNO wird mit einem RFID Kartenleser verbunden. Es werden zwei Karten
 
 Aufbau:
 ---------
-![Aufbau des Projekts](http://i.imgur.com/KHGSy42.png)
+![Aufbau des Projekts](http://i.imgur.com/Hg5M9JA.png)

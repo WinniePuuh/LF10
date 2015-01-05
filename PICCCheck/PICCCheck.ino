@@ -22,9 +22,9 @@
 #define RST_PIN 9
 
 // RGB LED Pins
-int redPin = 6;
+int redPin = 3;
 int greenPin = 5;
-int bluePin = 3;
+int bluePin = 6;
 
 MFRC522 mfrc522(SS_PIN, RST_PIN);
 #define COMMON_ANODE
@@ -46,15 +46,15 @@ void setup()
   // Initialisierung, weils toll aussieht!
   setColor(255, 0, 0); // Rot
   delay(500);
-  setColor(0, 255, 0); // Grün
+  setColor(0, 255, 0); // Grï¿½n
   delay(300);
   setColor(0, 0, 255); // Blau
   delay(600);
-  setColor(255, 255, 255); // Weiß
+  setColor(255, 255, 255); // Weiï¿½
   delay(400);
   setColor(255, 255, 0); // Gelb
   delay(600);
-  setColor(0, 255, 255); // Türkis
+  setColor(0, 255, 255); // Tï¿½rkis
   delay(500);
 }
  
@@ -66,7 +66,7 @@ void loop()
       // RGB LED aus
       setColor(0, 0, 0); // Schwarz
 
-    // Für einen schöneren Übergang
+    // Fï¿½r einen schï¿½neren ï¿½bergang
     delay(100);
     
     // Nach neuen Karten suchen.
@@ -76,13 +76,13 @@ void loop()
       return;
     }
 
-  // Eine der gefunden Karten auswählen
+  // Eine der gefunden Karten auswï¿½hlen
   if ( ! mfrc522.PICC_ReadCardSerial())
   {
     return;
   }
 
-  // Eigene UID bilden. Dazu nehmen wir die 4(7)Byte Hex UID aus Block 0 und quetschen sie in einen schönen String.
+  // Eigene UID bilden. Dazu nehmen wir die 4(7)Byte Hex UID aus Block 0 und quetschen sie in einen schï¿½nen String.
   String uID = String(mfrc522.uid.uidByte[0],HEX)+String(mfrc522.uid.uidByte[1],HEX)+String(mfrc522.uid.uidByte[2],HEX)+String(mfrc522.uid.uidByte[3],HEX);
   
   // PICC Typ herausbekommen
@@ -98,26 +98,26 @@ void loop()
   Serial.println(mfrc522.PICC_GetTypeName(piccType));
   Serial.println();
 */
-
-// Überprüfe auf unterstützten PICC Typ und noch mehr Debug Kram
+/* 
+// ï¿½berprï¿½fe auf unterstï¿½tzten PICC Typ und noch mehr Debug Kram
   if ( piccType != MFRC522::PICC_TYPE_MIFARE_MINI && piccType != MFRC522::PICC_TYPE_MIFARE_1K&& piccType != MFRC522::PICC_TYPE_MIFARE_1K) {
-    //Serial.println("Diese Tech-Demo benötigt MIFARE Classic Karten.");
-    // RGB LED für 3,5sek auf BLAU
-    setColor(0,0,255); // blau
+    Serial.println("Diese Tech-Demo benï¿½tigt MIFARE Classic Karten.");
+    // RGB LED fï¿½r 3,5sek auf BLAU
+   setColor(0,0,255); // blau
     delay(3500);
     return;
   }
- 
-// Den UID String vergleichen und eine entsprechende Aktion ausführen
+ */
+// Den UID String vergleichen und eine entsprechende Aktion ausfï¿½hren
   if( uID=="5b19d5ec" || uID=="4664d835")  {
      Serial.println("Access granted for uID " + uID);
-    // RGB LED für 3,5sek auf GRÜN
-    setColor(0, 255, 0); // grün
+    // RGB LED fï¿½r 3,5sek auf GRï¿½N
+    setColor(0, 255, 0); // grï¿½n
     delay(3500);  
 }
 else {
        Serial.println("I can't let you do that Dave (" + uID + ")");
-      // RGB LED für 3,5sek auf ROT
+      // RGB LED fï¿½r 3,5sek auf ROT
       setColor(255, 0, 0); // rot
       delay(3500);
   }
